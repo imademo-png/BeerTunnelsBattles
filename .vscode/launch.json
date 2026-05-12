@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "by-gdb",
+            "request": "launch",
+            "name": "Launch(gdb) main",
+            "program": "main",
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "debug main"
+        }
+    ]
+}

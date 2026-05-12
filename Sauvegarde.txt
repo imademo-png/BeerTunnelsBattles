@@ -1,0 +1,13 @@
+Nom : Von
+Taille : 164
+Genre : Homme
+Sante : 150
+Argent : 200
+Sante Max : 150
+cuivre : 0
+Fer : 0
+Charbon : 0
+Mithril : 0
+Potions : 0
+Bombes : 0
+Buff : AUCUNBONUS

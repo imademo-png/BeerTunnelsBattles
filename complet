@@ -1,0 +1,84 @@
+function ExtraireBonus(const valeur: string): string;
+var
+  posDebut: Integer;
+begin
+  // Trouve la position du dernier '(' pour extraire le bonus
+  posDebut := LastDelimiter('(', valeur);
+  if posDebut > 0 then
+    ExtraireBonus:= Copy(valeur, posDebut + 1, Length(valeur) - posDebut - 1) // Extrait le bonus
+  else
+    ExtraireBonus:= ''; // Pas de bonus trouvé
+end;
+
+
+function ExtraireBonus(const valeur: string): string;
+  var
+  posDebut:integer;
+  begin
+  posDebut := LastDelimiter('()', valeur);
+  if posDebut > 0 then
+    ExtraireBonus:= Copy(valeur, posDebut + 1, Length(valeur) - posDebut - 1)
+  else
+  ExtraireBonus:= '';
+  end;
+
+function ComparerBonus(const valeur1, valeur2: string): Integer;
+var
+  bonus1, bonus2: string;
+begin
+  // Extraire les bonus des deux valeurs
+  bonus1 := ExtraireBonus(valeur1);
+  bonus2 := ExtraireBonus(valeur2);
+
+  // Comparer les bonus
+  if bonus1 < bonus2 then
+    ComparerBonus:= -1
+  else if bonus1 > bonus2 then
+    ComparerBonus:= 1
+  else
+    ComparerBonus:= 0; // Si les bonus sont identiques
+end;
+
+function FusionnerListesParBonus(gauche, droite: PCellule): PCellule;
+var
+  resultat: PCellule;
+begin
+  if gauche = nil then
+    Exit(droite)
+  else if droite = nil then
+    Exit(gauche);
+
+  // Comparer les bonus des deux nœuds
+  if ComparerBonus(gauche^.valeur, droite^.valeur) <= 0 then
+  begin
+    resultat := gauche;
+   
+  end
+  else
+  begin
+    resultat := droite;
+    resultat^.suivant := FusionnerListesParBonus(gauche, droite^.suivant);
+  end;
+
+  Exit(resultat);
+end;
+
+procedure TriFusionParBonus(var head: PCellule);
+var
+  gauche, droite: PCellule;
+begin
+  if (head = nil) or (head^.suivant = nil) then
+    Exit;
+
+  // Diviser la liste en deux sous-listes
+  DiviserListe(head, gauche, droite);
+
+  // Appliquer le tri récursivement
+  TriFusionParBonus(gauche);
+  TriFusionParBonus(droite);
+
+  // Fusionner les listes triées
+  head := FusionnerListesParBonus(gauche, droite);
+end;
+
+end.

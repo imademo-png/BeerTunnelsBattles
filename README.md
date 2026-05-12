@@ -13,6 +13,8 @@ Projet universitaire réalisé en **FreePascal** dans le cadre du module **S1.01
 Le projet consiste à reprendre et améliorer un prototype du jeu vidéo **Beers Tunnels Battles** développé pour PC.
 
 L’objectif principal était d’ajouter de nouvelles fonctionnalités au prototype existant tout en appliquant différentes notions d’algorithmique et de structures de données.
+<img src="assets/menu.png" width="600">
+<img src="assets/Balrog.png" width="600">
 
 ---
 ## Fonctionnalités

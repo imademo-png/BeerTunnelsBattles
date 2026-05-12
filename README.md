@@ -94,4 +94,4 @@ Les versions du projet étaient échangées manuellement entre les membres de l�
 
 ## Auteurs
 
-Projet réalisé dans le cadre du BUT Informatique – IUT de Dijon.
+Projet réalisé dans le cadre du BUT Informatique.

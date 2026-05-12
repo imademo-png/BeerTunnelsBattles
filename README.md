@@ -1,6 +1,5 @@
 # BeerTunnelsBattles
 Premier projet Universitaire de développement lors de ma première année
-![image alt](https://github.com/imademo-png/BeerTunnelsBattles/blob/1d0c45a9d218a6dcfb085913b8f6bc8b70b77af9/Capture%20d'%C3%A9cran%202026-05-12%20154612.png)
 # Beers Tunnels Battles
 
 ![FreePascal](https://img.shields.io/badge/Built%20With-FreePascal-F7DF1E?style=for-the-badge)

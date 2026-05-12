@@ -15,16 +15,18 @@ Le projet consiste à reprendre et améliorer un prototype du jeu vidéo **Beers
 L’objectif principal était d’ajouter de nouvelles fonctionnalités au prototype existant tout en appliquant différentes notions d’algorithmique et de structures de données.
 
 ---
+## Fonctionnalités
 
-## Fonctionnalités réalisées
-
-### Nouveau système de recettes
-- Chargement automatique des recettes depuis un fichier externe.
-- Gestion dynamique d’un grand nombre de recettes.
-- Navigation entre plusieurs écrans de sélection.
-- Tri des recettes :
-  - par ordre alphabétique,
-  - par bonus apporté.
+- Menu principal
+- Création de partie
+- Gestion du temps et du calendrier
+- Gestion des ressources et équipements
+- Système de taverne
+- Marchand et stock limité
+- Combat dans les mines
+- Gestion de l’expérience du personnage
+- Sauvegarde et chargement
+- Tri et gestion dynamique des recettes
 
 ### Algorithmes de tri étudiés
 Les trois algorithmes suivants ont été étudiés et comparés :
@@ -32,21 +34,6 @@ Les trois algorithmes suivants ont été étudiés et comparés :
 - Tri fusion
 - Quick-sort
 
-Le tri le plus pertinent a été intégré selon les besoins du projet.
-
-### Sauvegarde et chargement
-Ajout d’un système permettant :
-- la sauvegarde automatique du joueur,
-- le chargement d’une partie depuis le menu principal.
-
-Les données sauvegardées incluent :
-- nom du joueur,
-- taille,
-- genre,
-- vie,
-- ressources.
-
----
 
 ## Technologies utilisées
 
@@ -56,6 +43,8 @@ Les données sauvegardées incluent :
 - Fichiers texte pour les données et sauvegardes
 
 ---
+
+
 
 ## Organisation du projet
 
